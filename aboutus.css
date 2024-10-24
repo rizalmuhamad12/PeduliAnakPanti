@@ -1,0 +1,499 @@
+:root {
+  --primery: #00aeef;
+  --bg: #f6fbff;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 7%;
+  font-size: 1.2rem;
+  background-color: #00afef77;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.navbar .navbar-logo {
+  font-size: 3rem;
+  margin-left: -1rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1, 3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primery);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primery);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to top, #00d9ff 25%, #00aeef 75%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateX(0px);
+}
+
+/*About Section*/
+.about {
+  min-height: 110vh;
+  padding: 10rem 5% 3.4rem;
+  margin-top: -5rem;
+  margin-bottom: 10rem;
+  background: linear-gradient(to bottom, #00aeef 0%, #00bbff 36%, #c2e9f7 100%);
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 1rem 0rem 2.5rem;
+}
+
+.about h2 span {
+  color: var(--primery);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  padding: 2rem 0 0 1.4rem;
+  flex: 1.5 1rem 45rem 20rem;
+  margin: 0, 0, 0, 2rem;
+}
+
+.about .row .about-img img {
+  height: 25rem;
+  width: 85%;
+  object-fit: cover; /* Pastikan gambar tetap proporsional */
+  border-radius: 15%;
+}
+
+.about .row .content {
+  flex: 1.5 1.5 35rem;
+  padding: 1 5rem;
+}
+
+.about .row .content h3 {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 6rem;
+  font-weight: 1000;
+  line-height: 1.6;
+}
+
+.about .row .content p {
+  padding-left: 2rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.about .content .cta {
+  margin: 1rem 0 0 2rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primery);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/*cara kerja section*/
+.carakerja {
+  background-color: #c2e9f7;
+  margin: -9rem 0 5rem;
+  padding: 0 0 10rem;
+}
+.carakerja .container {
+  max-width: 1200px;
+  margin: 13rem auto -4rem;
+  padding: 20px;
+}
+.carakerja .container h2 {
+  color: var(--primery);
+  margin: 2rem 0 5rem 1rem;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.carakerja .container .cards .card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  text-align: center;
+}
+.carakerja .container .cards .card i {
+  font-size: 40px;
+  color: var(--primery);
+  margin-bottom: 10px;
+}
+.carakerja .container .cards .card h3 {
+  color: var(--primery);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.carakerja .container .cards .card p {
+  color: #666666;
+  font-size: 14px;
+}
+.carakerja .container .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*Tim Sevtion*/
+
+.tim {
+  margin: -2rem 0 0;
+  padding: 2rem 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.tim h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 8rem;
+}
+
+.tim h3 {
+  font-size: 1.5rem;
+  max-width: 30rem;
+  padding: 0 1.5rem;
+}
+
+.tim p {
+  text-align: center;
+  max-width: 20rem;
+  margin: auto;
+  font-weight: 300;
+  line-height: 1.6;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.tim .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5rem 0 2rem;
+  justify-content: center;
+  gap: 1.5rem; /* Memberikan jarak antar container */
+}
+
+.tim .content .row .container {
+  background: linear-gradient(to bottom, #00aeef 0%, #00bbff 36%, #35c9ff 100%);
+  flex-wrap: wrap;
+  width: 25rem;
+  margin: -2rem 0 2rem;
+  justify-content: center;
+  border-radius: 5%;
+}
+
+.tim .row .tim-card {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.tim .row .tim-card img {
+  width: 200px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  margin: 2rem 0;
+  border-radius: 5%;
+}
+
+.tim .row .tim-card-title {
+  margin-top: 1.5rem auto 1rem;
+}
+
+.tim .row .tim-card a {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primery);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.tim .content .row .cta {
+  display: table;
+  justify-content: center;
+  align-items: center; /* Memastikan tombol berada di tengah secara vertikal */
+  margin: 3rem auto; /* Membuat tombol berada di tengah secara horizontal */
+  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primery);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.tim .content .cta {
+  display: table;
+  justify-content: center;
+  align-items: center; /* Memastikan tombol berada di tengah secara vertikal */
+  margin: 3rem auto; /* Membuat tombol berada di tengah secara horizontal */
+  margin-top: -1rem;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primery);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/*Partner Section*/
+
+.partner {
+  background-color: #c2e9f7;
+  text-align: center;
+  color: var(--primery);
+  padding: 2rem 5% 8rem;
+}
+.partner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.partner .container h2 {
+  color: var(--primery);
+  margin: 2rem 0 5rem 1rem;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.partner .container .grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.partner .container .grid-item {
+  background-color: var(--bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.partner .container .grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+/*Partner section end*/
+
+/* Contact Section */
+.contact {
+  min-height: 100vh;
+  padding: 2rem 5% 0;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  background: linear-gradient(to bottom, #00aeef 0%, #00bbff 36%, #c2e9f7 100%);
+}
+
+.contact .row {
+  display: flex;
+  margin-top: 6rem;
+  background-color: var(--bg);
+}
+
+.contact .row .map {
+  flex: 1 1 50rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Menghapus gaya untuk form dan input-group */
+.contact .row .contact-info {
+  flex: 1 1 45rem; /* Menjaga lebar area informasi */
+  padding: 5rem 2rem; /* Menjaga padding */
+  text-align: center; /* Memusatkan teks */
+}
+
+.contact .row .contact-info h3 {
+  font-size: 2rem; /* Ukuran font untuk judul */
+  margin-bottom: 1.5rem; /* Jarak bawah judul */
+}
+
+.contact .row .contact-info p {
+  font-size: 1.4rem; /* Ukuran font untuk paragraf */
+  margin: 0.5rem 0; /* Jarak antar paragraf */
+}
+
+.contact .row .contact-info a {
+  color: #00bbff; /* Warna tautan */
+  text-decoration: none; /* Menghapus garis bawah */
+}
+
+.contact .row .contact-info a:hover {
+  text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+/*footer*/
+footer {
+  background-color: var(--primery);
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem 0 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+footer .links {
+  margin-bottom: 1.4rem;
+}
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 740px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #00afef77;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+}
+
+.about .row {
+  flex-wrap: wrap;
+}
+
+.about .row .about-img img {
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about .row .content {
+  padding: 0;
+}
+
+.about .row .content h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.about .row .content {
+  font-size: 1.6rem;
+}
+
+.program p {
+  font-size: 1.3rem;
+}
+
+.contact .row {
+  flex-wrap: wrap;
+}
+
+.contact .row .map {
+  height: 30rem;
+}
+.contact .row form {
+  padding-top: 0;
+}
+
+/* Mobile phone */
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+}

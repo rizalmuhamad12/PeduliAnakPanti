@@ -1,0 +1,535 @@
+:root {
+  --primery: #00aeef;
+  --bg: #f6fbff;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 7%;
+  font-size: 1.2rem;
+  background-color: #00afef77;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.navbar .navbar-logo {
+  font-size: 3rem;
+  margin-left: -1rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1, 3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primery);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primery);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to top, #00d9ff 25%, #00aeef 75%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateX(0px);
+}
+/*donasis Section*/
+
+.donasi {
+  padding: 10rem 5% 3.4rem;
+  margin-top: -5rem;
+  margin-bottom: 10rem;
+  background: linear-gradient(to bottom, #00aeef 0%, #00bbff 36%, #c2e9f7 100%);
+  text-align: center;
+}
+.donasi .container {
+  width: 80%;
+  margin: 0 auto;
+}
+.donasi .container h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 20px;
+  color: var(--bg);
+}
+.donasi .container p {
+  font-size: 1.6rem;
+  color: var(--bg);
+}
+.donasi .container .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.donasi .container .cards .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: left;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.donasi .container .cards .card img {
+  width: 100%;
+  height: auto;
+}
+.donasi .container .cards .card-content {
+  padding: 15px;
+}
+.donasi .container .cards .card-content h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: var(--primery);
+}
+.donasi .container .cards .card-footer p {
+  font-size: 2rem;
+  color: #333;
+}
+.donasi .container .cards .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+.donasi .container .cards .card-footer .amount {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--primery);
+}
+.donasi .container .cards .card-footer .days-left {
+  font-size: 1.2rem;
+  color: #999;
+}
+.donasi .container .cards .card-footer .icon {
+  display: flex;
+  align-items: center;
+}
+.donasi .container .cards .card-footer .icon img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.donasi .container .cards .cta {
+  display: table;
+  justify-content: center;
+  align-items: center; /* Memastikan tombol berada di tengah secara vertikal */
+  margin: 3rem auto; /* Membuat tombol berada di tengah secara horizontal */
+  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primery);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+/*playings Section*/
+
+.playing {
+  margin: -8rem 0 5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.playing .container {
+  width: 80%;
+  margin: 0 auto;
+}
+.playing .container h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 20px;
+  color: var(--primery);
+}
+.playing .container p {
+  font-size: 1.6rem;
+  color: var(--primery);
+}
+.playing .container .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.playing .container .cards .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: left;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.playing .container .cards .card img {
+  width: 100%;
+  height: auto;
+}
+.playing .container .cards .card-content {
+  padding: 15px;
+}
+.playing .container .cards .card-content h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: var(--primery);
+}
+.playing .container .cards .card-footer p {
+  font-size: 2rem;
+  color: #333;
+}
+.playing .container .cards .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+.playing .container .cards .card-footer .amount {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--primery);
+}
+.playing .container .cards .card-footer .days-left {
+  font-size: 1.2rem;
+  color: #999;
+}
+.playing .container .cards .card-footer .icon {
+  display: flex;
+  align-items: center;
+}
+.playing .container .cards .card-footer .icon img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.playing .container .cards .cta {
+  display: table;
+  justify-content: center;
+  align-items: center; /* Memastikan tombol berada di tengah secara vertikal */
+  margin: 3rem auto; /* Membuat tombol berada di tengah secara horizontal */
+  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primery);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+/*learnings Section*/
+
+.learning {
+  margin: 6rem 0 0;
+  padding-bottom: 2rem;
+  background: linear-gradient(to bottom, #00aeef 0%, #00bbff 36%, #c2e9f7 100%);
+  text-align: center;
+}
+.learning .container {
+  width: 80%;
+  margin: 0 auto;
+}
+.learning .container h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 20px;
+  color: var(--bg);
+}
+.learning .container p {
+  font-size: 1.6rem;
+  color: var(--bg);
+}
+.learning .container .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.learning .container .cards .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: left;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.learning .container .cards .card img {
+  width: 100%;
+  height: auto;
+}
+.learning .container .cards .card-content {
+  padding: 15px;
+}
+.learning .container .cards .card-content h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: var(--primery);
+}
+.learning .container .cards .card-footer p {
+  font-size: 2rem;
+  color: #333;
+}
+.learning .container .cards .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+.learning .container .cards .card-footer .amount {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--primery);
+}
+.learning .container .cards .card-footer .days-left {
+  font-size: 1.2rem;
+  color: #999;
+}
+.learning .container .cards .card-footer .icon {
+  display: flex;
+  align-items: center;
+}
+.learning .container .cards .card-footer .icon img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.learning .container .cards .cta {
+  display: table;
+  justify-content: center;
+  align-items: center; /* Memastikan tombol berada di tengah secara vertikal */
+  margin: 3rem auto; /* Membuat tombol berada di tengah secara horizontal */
+  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primery);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* Contact Section
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 300;
+  line-height: 1.6;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+}
+
+.contact .row .map {
+  flex: 1 1 40rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid #eee;
+  padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 1.4rem;
+  font-size: 1.4rem;
+  background: none;
+  color: #fff;
+}
+
+.contact .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primery);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+/*footer*/
+footer {
+  background-color: var(--primery);
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem 0 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+footer .links {
+  margin-bottom: 1.4rem;
+}
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 740px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #00afef77;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+}
+
+.about .row {
+  flex-wrap: wrap;
+}
+
+.about .row .about-img img {
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about .row .content {
+  padding: 0;
+}
+
+.about .row .content h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.about .row .content {
+  font-size: 1.6rem;
+}
+
+.donasi p {
+  font-size: 1.8rem;
+}
+
+.contact .row {
+  flex-wrap: wrap;
+}
+
+.contact .row .map {
+  height: 30rem;
+}
+.contact .row form {
+  padding-top: 0;
+}
+
+/* Mobile phone */
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+}
